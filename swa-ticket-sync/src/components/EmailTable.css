@@ -1,0 +1,124 @@
+.email-table-container {
+  margin: 20px 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: white;
+  overflow: hidden;
+}
+
+.email-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.email-table-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.selection-info {
+  font-size: 14px;
+  color: #666;
+}
+
+.email-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.email-table thead {
+  background: #f8f9fa;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.email-table th {
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+  color: #555;
+}
+
+.email-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 14px;
+}
+
+.email-table tbody tr {
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.email-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.email-table tbody tr.selected {
+  background-color: #e3f2fd;
+}
+
+.email-table tbody tr.selected:hover {
+  background-color: #d1e7fd;
+}
+
+.checkbox-column {
+  width: 40px;
+  text-align: center;
+}
+
+.checkbox-column input[type="checkbox"] {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+.subject-column {
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.sender-column {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #666;
+}
+
+.received-column {
+  width: 180px;
+  color: #666;
+  white-space: nowrap;
+}
+
+.route-column {
+  width: 120px;
+  color: #666;
+  font-family: monospace;
+}
+
+.empty-state {
+  padding: 40px 20px;
+  text-align: center;
+  color: #999;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .email-table-container {
+    overflow-x: auto;
+  }
+
+  .email-table {
+    min-width: 600px;
+  }
+}
