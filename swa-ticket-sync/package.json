@@ -1,0 +1,38 @@
+{
+  "name": "swa-ticket-sync",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@azure/msal-browser": "^4.14.0",
+    "@azure/msal-react": "^3.0.14",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "web-vitals": "^5.0.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "react-scripts": "^5.0.1"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
